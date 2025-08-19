@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎁 You've Got a Gift!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      padding: 40px;
+      margin: 60px auto;
+      max-width: 450px;
+    }
+    h1 {
+      color: #333;
+    }
+    .amount {
+      font-size: 28px;
+      font-weight: bold;
+      color: #4CAF50;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background: #4CAF50;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>from your favourite team! We wish you success and good fortune in all your future endeavors! </h1>
+    <p>You’ve received a gift worth:</p>
+    <div class="amount">Surprise!!!!</div>
+
+    <!-- Claim Button -->
+    <button class="btn" onclick="showMessage()">💝 Claim Gift</button>
+
+    <!-- Hidden message -->
+    <div id="message" class="hidden-message">
+      🎊 Congratulations! You have successfully claimed your gift 🎊 Go check your GPAY
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
